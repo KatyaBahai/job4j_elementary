@@ -13,5 +13,6 @@ public class Multiple {
         System.out.println("1 * 8 = 8");
         System.out.println("1 * 9 = 9");
         System.out.println("1 * 10 = 10");
+        double distance = 3.2143e7;
     }
 }

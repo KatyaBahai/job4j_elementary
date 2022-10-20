@@ -17,7 +17,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenXA5XB10YA3YB4Then1() {
+    public void whenXA5XB10YA3YB4Then6dot324() {
         int xa = 5;
         int xb = 10;
         int ya = 3;
@@ -28,7 +28,7 @@ public class PointTest {
     }
 
     @Test
-    public void whenXA0XB1YA2YB3Then1() {
+    public void whenXA0XB1YA2YB3Then2dot828() {
         int xa = 0;
         int xb = 1;
         int ya = 2;

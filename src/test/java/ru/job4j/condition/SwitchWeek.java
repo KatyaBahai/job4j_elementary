@@ -12,7 +12,7 @@ public class SwitchWeek {
                 name = "Вторник";
                 break;
             case 3 :
-                name = "Среда";
+                name = "Серда";
                 break;
             case 4 :
                 name = "Четверг";
@@ -26,10 +26,9 @@ public class SwitchWeek {
             case 7 :
                 name = "Воскресенье";
                 break;
-            default:
+            default :
                 name = "Ошибка";
                 break;
-
         }
         return name;
     }

@@ -1,6 +1,6 @@
 package ru.job4j.array;
 
-import java.util.Arrays;
+import java.io.FileOutputStream;
 
 public class Matrix {
 
@@ -12,5 +12,21 @@ public class Matrix {
             }
         }
         return table;
+    }
+
+    public static void main(String[] args) {
+        try (FileOutputStream file = new FileOutputStream("C:/projects/job4j_design/data/dataresult.txt")) {
+            int[][] table = multiple(9);
+            for (int[] ints : table) {
+                for (int cell = 0; cell < table.length; cell++) {
+                    String temp = String.valueOf(ints[cell]);
+                    file.write(temp.getBytes());
+                    file.write(" ".getBytes());
+                }
+                file.write(System.lineSeparator().getBytes());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
